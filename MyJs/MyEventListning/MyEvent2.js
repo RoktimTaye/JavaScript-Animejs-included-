@@ -68,4 +68,7 @@ window.addEventListener("keydown", () => {
   h1.textContent = names[index];
   // Index ko agle naam par le jaate hain, agar last ho gaya toh fir se 0 ho jayega
   index = (index + 1) % names.length;
+  //har click main jo random name ayega vo yrin hain ek bar click kiya 0 index main
+  //gaya pehla number , dusri bar click kiya dusre index main gaya number and so
+  //on until it reaches 20 and begins again from 0
 });
