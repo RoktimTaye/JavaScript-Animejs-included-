@@ -6,8 +6,8 @@ window.addEventListener("keydown", (event) => {
     if(event.key === " ") {
         h1.textContent = "SPC";
     }
-
     else{
         h1.textContent = event.key;
     }
+    
 });
