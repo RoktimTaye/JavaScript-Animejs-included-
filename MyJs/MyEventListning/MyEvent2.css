@@ -1,0 +1,13 @@
+body {
+  background-color: #252525;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: roboto, sans-serif;
+}
