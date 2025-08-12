@@ -5,7 +5,7 @@ let form = document.querySelector("#loginForm");
 form.addEventListener("submit", function (dets) {
     dets.preventDefault();
     //Step 2 Checks if anything is empty
-    // Clear previous errors
+    // Clear the previous small tag errors When the Form is submited sucessfully or else the message will appear even after the submition of form And also keeps it clear when the page is loaded first time.
     document.querySelector("#emailError").textContent = "";
     document.querySelector("#passwordError").textContent = "";
     //Step 3 Check weather the email and password is valid or not with regex
@@ -19,14 +19,14 @@ form.addEventListener("submit", function (dets) {
     let isValid = true;
 
     if (!emailAns) {
-        document.querySelector("#emailError").textContent = "Email is incorrect";
-        document.querySelector("#emailError").style.display = "initial";
+        document.querySelector("#emailError").textContent = "Email is incorrect"; //Here the error message is generated wen something wents wrong
+        document.querySelector("#emailError").style.display = "initial"; // And error messsage is initiated
         isValid = false;
     }
 
     if (!passwordAns) {
-        document.querySelector("#passwordError").textContent = "Password is incorrect";
-        document.querySelector("#passwordError").style.display = "initial";
+        document.querySelector("#passwordError").textContent = "Password is incorrect"; //Here the error message is generated wen something wents wrong
+        document.querySelector("#passwordError").style.display = "initial"; // And error messsage is initiated
         isValid = false;
     }
     // Step 6 If everything is correct then show the success message
