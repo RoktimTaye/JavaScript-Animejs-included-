@@ -30,6 +30,7 @@ form.addEventListener("submit",function(dets){
 
     if(isValid){
         document.querySelector("#resultMessage").textContent = "EveryThing is correct";
+        document.querySelector("#resultMessage").style.display = "initial";
     }
 
 });
